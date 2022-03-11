@@ -1,0 +1,244 @@
+.hero {
+    background-color: $main-white;
+
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__heading {
+        margin-right: 49px;
+        font-weight: 600;
+        font-size: 39px;
+        line-height: 57px;
+        text-transform: uppercase;
+        color: #55a630;
+    }
+
+    &__pic {
+        width: 589px;
+        height: 452px;
+    }
+
+    &__box {
+        max-width: 1036px;
+        margin: 75px auto 0;
+        padding: 60px 14px 60px 25px;
+        background-color: $main-white;
+        box-shadow: 10px 10px 10px rgba(207, 207, 207, 0.25);
+    }
+
+    &__text {
+        max-width: 997px;
+        margin: 0;
+        font-weight: 500;
+        font-size: 25px;
+        color: $main-black;
+        line-height: 34px;
+        opacity: 0.8;
+
+        &:first-child {
+            margin-bottom: 31px;
+        }
+    }
+
+    &__br--active {
+        display: none;
+    }
+
+    &__br--active4 {
+        display: none;
+    }
+
+    @media only screen and (max-width: 1000px) {
+        .hero {
+
+            &__heading {
+                margin-right: 21px;
+                font-size: 32px;
+                line-height: 46px;
+            }
+
+            &__pic {
+                width: 471px;
+                height: 433px;
+            }
+
+            &__box {
+                max-width: 838px;
+                margin-top: 50px;
+
+                padding: {
+                    top: 37px;
+                    right: 37px;
+                    bottom: 38px;
+                    left: 51px;
+                }
+            }
+
+            &__text {
+                max-width: 750px;
+                font-size: 20px;
+                line-height: 26px;
+            }
+
+            &__br--active {
+                display: block;
+            }
+        }
+    }
+
+    @media only screen and (max-width: 768px) {
+        .hero {
+
+            &-container {
+                padding-right: 67px;
+
+            }
+
+            &__inner {
+                max-width: 642px;
+                margin: 0 auto;
+            }
+
+            &__heading {
+                width: 305px;
+                margin: 0;
+                margin-right: 26px;
+                font-size: 21px;
+                line-height: 31px;
+            }
+
+            &__pic {
+                max-width: 311px;
+                height: 294px;
+            }
+
+            &__box {
+                max-width: 572px;
+
+                padding: {
+                    top: 32px;
+                    right: 31px;
+                    bottom: 32px;
+                    left: 26px;
+                }
+            }
+
+            &__text {
+                font-size: 15px;
+                line-height: 21px;
+            }
+
+            &__text:first-child {
+                margin-bottom: 28px;
+            }
+
+            &__br--active7 {
+                display: none;
+            }
+        }
+    }
+
+    @media only screen and (max-width: 480px) {
+        .hero {
+
+            &-container {
+                padding-right: 0;
+                padding-left: 0;
+            }
+
+            &__inner {
+                flex-direction: column;
+            }
+
+            &__heading {
+                width: 369px;
+                margin-bottom: 35px;
+                font-size: 20px;
+                line-height: 28px;
+                text-align: center;
+            }
+
+            &__pic {
+                min-width: 480px;
+                min-height: 222px;
+            }
+
+            &__box {
+                max-width: 360px;
+                margin-top: 40px;
+                padding: 22px 19px 22px 20px;
+            }
+
+            &__text {
+                max-width: 319px;
+                margin: 0;
+                font-size: 15px;
+                line-height: 22px;
+                text-align: center;
+            }
+
+            &__text:first-child {
+                margin-bottom: 29px;
+            }
+
+            &__br--active4 {
+                display: block;
+            }
+
+            &__br--active-not {
+                display: none;
+            }
+        }
+    }
+
+    @media only screen and (max-width: 320px) {
+        .hero {
+
+            &-container {
+                padding-left: 11px;
+                padding-right: 11px;
+            }
+
+            &__heading {
+                max-width: 309px;
+                margin-bottom: 34px;
+                margin-right: 0;
+                font-size: 21px;
+                line-height: 25px;
+                text-align: center;
+            }
+
+            &__pic {
+                min-width: 320px;
+                height: 183px;
+                margin-bottom: 40px;
+            }
+
+            &__box {
+                max-width: 298px;
+                margin: 0 auto;
+
+                padding: {
+                    top: 22px;
+                    bottom: 23px;
+                    left: 2px;
+                    right: 1px;
+                }
+            }
+
+            &__text {
+                max-width: 295px;
+                text-align: center;
+                font-size: 15px;
+                line-height: 21px;
+            }
+
+            &__br--active3 {
+                display: block;
+            }
+        }
+    }
+}
