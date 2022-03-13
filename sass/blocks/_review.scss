@@ -1,0 +1,346 @@
+.review {
+    margin-top: 175px;
+    scrollbar-color: $main-green;
+    overflow: hidden;
+
+    &__heading {
+        margin: 0;
+        margin-bottom: 75px;
+        font-weight: 600;
+        font-size: 35px;
+        line-height: 28px;
+        text-align: center;
+        color: $main-black;
+    }
+
+    &__box {
+        height: 1048px;
+
+        padding: {
+            right: 47px;
+            top: 70px;
+            left: 104px;
+            bottom: 52px;
+        }
+
+        background-color:#ecf9eb;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+
+    &-wrapper {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin-bottom: 80px;
+    }
+
+    &__headings {
+        margin: 0;
+        margin-bottom: 9px;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 26px;
+        color: $main-black;
+        text-transform: capitalize;
+    }
+
+    &__span {
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 26px;
+        color: $main-black;
+        opacity: 0.8;
+    }
+
+    &__text {
+        max-width: 746px;
+        margin: 0;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 28px;
+        color: #1c1e23;
+        opacity: 0.8;
+    }
+
+    &__button {
+        position: absolute;
+        width: 80.2%;
+        height: 106px;
+        background-color: #ecf9eb;
+        z-index: 1000;
+        transform: translate(-1px, -8px);
+    }
+
+    &__btn {
+        display: inline-block;
+        padding: 21px 65px;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 26px;
+        border: none;
+        background-color: $main-green;
+        color: $main-white;
+        cursor: pointer;
+        transform: translate(338px, 20px);
+    }
+
+}
+
+@media only screen and (max-width: 1000px) {
+    .review {
+        margin-top: 140px;
+
+        &__heading {
+            margin-bottom: 50px;
+            font-size: 35px;
+            line-height: 28px;
+        }
+
+        &__box {
+            padding: {
+                top: 70px;
+                right: 38px;
+                left: 82px;
+                bottom: 63px;
+            }
+        }
+
+        &-wrapper {
+            margin-bottom: 52px;
+        }
+
+        &-wrapper--last {
+            margin-bottom: 138px;
+        }
+
+        &__headings {
+            margin-bottom: 9px;
+            font-size: 18px;
+            line-height: 26px;
+        }
+
+        &__text {
+            max-width: 598px;
+            font-size: 16px;
+            line-height: 28px;
+        }
+
+        &__text4 {
+            width: 598px;
+            text-align: left;
+        }
+
+        &__span1000 {
+            display: none;
+        }
+
+        &__button {
+            width: 87.8%;
+            height: 183px;
+        }
+
+        &__btn {
+            padding: 19px 47px;
+            font-size: 18px;
+            line-height: 14px;
+            transform: translate(264px, 70px);
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .review {
+        margin-top: 100px;
+
+        &__heading {
+            font-size: 25px;
+            line-height: 17px;
+        }
+
+        &__box {
+            max-width: 642px;
+            margin: 0 auto;
+
+            padding: {
+                top: 48px;
+                right: 31px;
+                left: 60px;
+                bottom: 56px;
+            }
+        }
+
+        &-wrapper {
+            flex-direction: column-reverse;
+            max-width: 551px;
+            margin-bottom: 63px;
+        }
+
+        &__inner {
+            display: flex;
+            flex-direction: column;
+            align-self: flex-end;
+        }
+
+        &__headings {
+            margin: 0;
+            font-weight: normal;
+            font-size: 15px;
+            line-height: 26px;
+        }
+
+        &__text {
+            max-width: 550px;
+            font-size: 15px;
+            line-height: 23px;
+        }
+
+        &__span {
+            align-self: flex-end;
+            margin-top: 9px;
+            font-size: 15px;
+            line-height: 26px;
+            order: -1;
+        }
+
+        &__span1000 {
+            display: inline;
+        }
+
+        &__span768 {
+            display: none;
+        }
+
+        &__button {
+            width: 74.9%;
+            height: 98px;
+        }
+
+        &__btn {
+            padding: 17px 51px;
+            transform: translate(132px, 15px);
+        }
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .review {
+        margin-top: 80px;
+
+        &__heading {
+            margin-bottom: 40px;
+            font-size: 20px;
+            line-height: 15px;
+        }
+
+        &__box {
+            max-width: 360px;
+            margin: 0 auto;
+
+            padding: {
+                top: 32px;
+                right: 14px;
+                left: 16px;
+                bottom: 45px;
+            }
+        }
+
+        &-wrapper {
+            max-width: 330px;
+            margin-bottom: 50px;
+        }
+
+        &__text {
+            max-width: 320px;
+        }
+
+        &__text2,
+        &__text3 {
+            max-width: 326px;
+        }
+
+        &__span {
+            margin: 0;
+        }
+
+        &__span480 {
+            display: none;
+        }
+
+        &__button {
+            width: 70%;
+            height: 120px;
+            transform: translateY(-248px);
+        }
+
+        &__btn {
+            padding: 17px 55px 16px 48px;
+            transform: translate(37px, 35px)
+        }
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .review {
+        margin-top: 80px;
+
+        &-container {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+
+        &__heading {
+            font-size: 20px;
+            line-height: 28px;
+        }
+
+        &__box {
+            height: 791px;
+
+            padding: {
+                top: 28px;
+                right: 10px;
+                left: 26px;
+
+            }
+        }
+
+        &-wrapper {
+            max-width: 264px;
+            margin-bottom: 56px;
+        }
+
+        &__headings {
+            font-size: 13px;
+            line-height: 15px;
+        }
+
+        &__span {
+            margin-top: 5px;
+            margin-bottom: 4px;
+            line-height: 26px;
+        }
+
+        &__span320 {
+            display: none;
+        }
+
+        &__text {
+            max-width: 254px;
+        }
+
+        &__button {
+            width: 83%;
+            height: 121px;
+            transform: translateY(-563px);
+        }
+
+        &__btn {
+            padding: 15px 37px;
+            font-size: 18px;
+            line-height: 16px;
+            transform: translate(12px, 37px);
+        }
+    }
+}

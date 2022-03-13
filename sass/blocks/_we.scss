@@ -1,0 +1,438 @@
+.we {
+    margin-top: 175px;
+
+    &__heading {
+        margin: 0;
+        margin-bottom: 75px;
+        font-weight: 600;
+        font-size: 35px;
+        line-height: 28px;
+        color: $main-black;
+        text-align: center;
+    }
+
+    &__box {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__card {
+        padding: {
+            top: 40px;
+            right: 15px;
+            left: 31px;
+            bottom: 23px;
+        }
+
+        background-color: $main-white;
+        box-shadow: 0px 10px 10px #f0f0f0;
+
+        background: {
+            image: url(../../img/first.png);
+            repeat: no-repeat;
+            size: auto;
+            position: right 33px bottom 22px;
+        }
+    }
+
+    &__card2 {
+        padding: {
+            top: 40px;
+            right: 20px;
+            bottom: 70px;
+            left: 31px;
+        }
+
+        background-color: $main-pgreen;
+        background-image: url(../../img/second.png);
+        background-position: right 35px top 23px;
+    }
+
+    &__card3 {
+        max-width: 381px;
+
+        padding: {
+            top: 28px;
+            bottom: 28px;
+            right: 18px;
+            left: 32px;
+        }
+
+        background-image: url(../../img/third.png);
+        background-position: right 27px bottom 27px;
+    }
+
+    &__headings {
+        margin: 0;
+        margin-bottom: 33px;
+        font-weight: 600;
+        font-size: 25px;
+        line-height: 26px;
+        color: $main-black;
+    }
+
+    &__heading2 {
+        margin-bottom: 31px;
+    }
+
+    &__heading3 {
+        margin-bottom: 14px;
+    }
+
+    &__text {
+        max-width: 335px;
+        margin: 0;
+        font-size: 20px;
+        line-height: 23px;
+        color: #1c1e23;
+        opacity: 0.8;
+    }
+}
+
+//media
+
+@media only screen and (max-width: 1000px) {
+    .we {
+        margin-top: 140px;
+
+        &-container {
+            padding-right: 19px;
+            padding-left: 16px;
+        }
+
+        &__heading {
+            margin-bottom: 50px;
+            font-size: 30px;
+            line-height: 28px;
+        }
+
+        &__card {
+            padding: {
+                top: 45px;
+                left: 24px;
+                bottom: 39px;
+                right: 0;
+            }
+
+            background: {
+                image: url(../../img/first1000.png);
+                repeat: no-repeat;
+                size: auto;
+                position: right 26px bottom 5px;
+            }
+        }
+
+        &__card2 {
+            padding: {
+                top: 47px;
+                bottom: 71px;
+                left: 25px;
+                right: 16px;
+            }
+
+            background-image: url(../../img/second1000.png);
+            background-position: right 37px top 9px;
+        }
+
+        &__card3 {
+            padding: {
+                top: 27px;
+                left: 25px;
+                bottom: 65px;
+                right: 0;
+            }
+
+            background-image: url(../../img/third1000.png);
+            background-position: right 18px bottom 2px;
+        }
+
+        &__headings {
+            margin-bottom: 13px;
+            font-size: 20px;
+            line-height: 26px;
+        }
+
+        &__heading3 {
+            max-width: 216px;
+        }
+
+        &__text {
+            max-width: 275px;
+            font-size: 15px;
+            line-height: 17px;
+        }
+
+        &__default {
+            display: none;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .we {
+        max-width: 642px;
+        margin: 100px auto 0;
+
+        &__heading {
+            margin-bottom: 50px;
+            font-size: 25px;
+            line-height: 28px;
+        }
+
+        &__box {
+            flex-direction: column;
+        }
+
+        &__card {
+            display: flex;
+            align-items: flex-end;
+            flex-direction: column;
+            min-width: 100%;
+            padding: 15px 0 5px;
+
+            background: {
+                image: url(../../img/first768.png);
+                repeat: no-repeat;
+                size: auto;
+                position: left 10px center;
+            }
+        }
+
+        &__card2 {
+            padding: {
+                top: 15px;
+                right: 9px;
+                bottom: 40px;
+            }
+
+            background-image: url(../../img/second768.png);
+        }
+
+        &__card3 {
+            padding: {
+                top: 15px;
+                right: 23px;
+                bottom: 27px;
+                left: 2px;
+            }
+
+            background-image: url(../../img/third768.png);
+        }
+
+        .card-wrapper3 {
+            max-width: 398px;
+        }
+
+        &__card:not(:last-child) {
+            margin-bottom: 30px;
+        }
+
+        &__headings {
+            max-width: none;
+            margin-bottom: 9px;
+            font-size: 16px;
+            line-height: 26px;
+        }
+
+        &__heading2,
+        &__heading3 {
+            margin-bottom: 15px;
+        }
+
+        &__text {
+            max-width: 421px;
+        }
+
+        &__text2 {
+            max-width: 411px;
+        }
+
+        &__text3 {
+            max-width: 398px;
+
+        }
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .we {
+        max-width: 368px;
+        margin-top: 80px;
+
+        &__heading {
+            margin-bottom: 40px;
+            font-size: 20px;
+            line-height: 28px;
+        }
+
+        &__card {
+            padding: {
+                top: 15px;
+                bottom: 15px;
+                right: 1px;
+                left: 0;
+            }
+
+            background: {
+                image: url(../../img/first480.png);
+                repeat: no-repeat;
+                size: auto;
+                position: left 29px center;
+            }
+        }
+
+        &__card2 {
+            padding: {
+                top: 25px;
+                bottom: 43px;
+                right: 16px;
+            }
+
+            background-image: url(../../img/second480.png);
+            background-position: left 33px center;
+        }
+
+        &__card3 {
+            padding: {
+                top: 21px;
+                right: 21px;
+                left: 11px;
+                bottom: 50px;
+            }
+
+            background-image: url(../../img/third480.png);
+            background-position: 39px 57px;
+        }
+
+        &__card:not(:last-child) {
+            margin-bottom: 40px;
+        }
+
+        .card-wrapper2 {
+            max-width: 232px;
+        }
+
+        .card-wrapper3 {
+            max-width: 219px;
+        }
+
+        &__headings {
+            margin-bottom: 15px;
+            font-size: 15px;
+            line-height: 26px;
+        }
+
+        &__heading2 {
+            margin-bottom: 18px;
+        }
+
+        &__heading3 {
+            width: 228px;
+            margin-bottom: 19px;
+        }
+
+        &__text {
+            max-width: 248px;
+            font-size: 15px;
+            line-height: 19px;
+        }
+
+        &__span480 {
+            display: block;
+        }
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .we {
+        margin-top: 80px;
+        max-width: 300px;
+
+        &-container {
+            padding-right: 10px;
+            padding-left: 10px;
+        }
+
+        &__card {
+
+            padding: {
+                top: 34px;
+                bottom: 31px;
+            }
+
+            background: {
+                image: url(../../img/first480.png);
+                repeat: no-repeat;
+                size: 49px 39px;
+                position: top 13px center;
+            }
+        }
+
+        &__card2 {
+            padding: {
+                top: 40px;
+                bottom: 41px;
+                right: 0;
+                left: 0;
+            }
+
+            background-image: url(../../img/second480.png);
+            background-size: 55px 40px;
+            background-position: top 10px center;
+        }
+
+        &__card3 {
+            padding-right: 0;
+            padding-left: 0;
+            padding-top: 40px;
+            padding-bottom: 41px;
+
+            background-image: url(../../img/third480.png);
+            background-size: 58px 38px;
+        }
+
+        .card-wrapper2 {
+            max-width: none;
+            width: 285px;
+        }
+
+        .card-wrapper3 {
+            max-width: none;
+            width: 273px;
+        }
+
+        &__headings {
+            max-width: none;
+            width: 100%;
+            text-align: center;
+        }
+
+        &__text1 {
+            max-width: 279px;
+
+            padding: {
+                right: 1px;
+                left: 20px;
+            }
+        }
+
+        &__text2 {
+            max-width: 243px;
+
+            padding: {
+                right: 1px;
+                left: 20px;
+            }
+        }
+
+        &__text3 {
+            width: 100%;
+            padding-left: 18px;
+        }
+
+        &__span320 {
+            display: block;
+        }
+    }
+}
